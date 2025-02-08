@@ -12,4 +12,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${props => props.theme["background"]};
   }
+
+  h1 {
+    font-size: 2.25rem;
+    color: ${props => props.theme["title"]};
+  }
+
 `

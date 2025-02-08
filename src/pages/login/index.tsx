@@ -1,6 +1,8 @@
 import { PiSignInBold } from "react-icons/pi"
 import Logo from "../../assets/Logo.svg"
 import people from "../../assets/people.svg"
+import { Button } from "../../components"
+import { Input } from "../../components/input"
 import { ActionContainer, ContentContainer, ImageContainer, LoginContainer, LogoContainer, LogonContainer, SignInContainer } from "./style"
 export function Login() {
   return (
@@ -14,8 +16,8 @@ export function Login() {
           <h1>Faça seu Logon</h1>
 
           <ActionContainer>
-            <input type="text" placeholder="Sua ID" />
-            <button>Entrar</button>
+            <Input placeholder="Sua ID" />
+            <Button text="Entrar" />
           </ActionContainer>
 
           <SignInContainer href="/">

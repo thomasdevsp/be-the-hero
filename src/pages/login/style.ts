@@ -43,36 +43,12 @@ export const LogonContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
-  h1 {
-    font-size: 2.25rem;
-  }
-
 `
 export const ActionContainer = styled.div`
   display: flex;
   flex-direction: column;
 
   gap: 1rem;
-
-  input {
-    outline: none;
-    font-size: 1.125rem;
-    border: 0;
-    padding: 1.15rem;
-    border-radius: 0.5rem;
-    border: 1px solid #DCDCE5;
-  }
-
-  button {
-    padding: 1.15rem;
-    border: 0;
-    font-size: 1.125rem;
-    border-radius: 0.5rem;
-
-
-    color: ${props => props.theme["background"]};
-    background-color: ${props => props.theme["redHero"]};
-  }
 `
 
 export const SignInContainer = styled.a`
@@ -80,9 +56,9 @@ export const SignInContainer = styled.a`
     align-items: center;
     gap: 1.125rem;
 
-    color: ${props => props.theme["sub-text"]};
+    color: ${props => props.theme["nav-text"]};
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
 `
