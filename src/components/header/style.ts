@@ -31,5 +31,6 @@ export const ActionContainer = styled.div`
 export const PowerButton = styled.a`
   padding: 1.125rem;
   border: 1.5px solid #DCDCE5;
+  background-color: #FFF;
   border-radius: 0.5rem;
 `
