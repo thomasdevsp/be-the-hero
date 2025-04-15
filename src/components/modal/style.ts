@@ -55,12 +55,4 @@ export const ModalContent = styled.div`
   padding: 6rem;
 `
 
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`
-
-export const BackToDashboard = styled.div``
-
 export const ModalForm = styled.div``

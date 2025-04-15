@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -37,4 +37,33 @@ export const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme["title"]};
   }
 
+`
+
+export const BackToNav = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  color: ${props => props.theme["nav-text"]};
+
+`
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  `
+
+export const InlineInput = styled.div`
+  display: grid;
+  grid-template-columns: 80% 19%;
+  gap: 0.5rem;
 `

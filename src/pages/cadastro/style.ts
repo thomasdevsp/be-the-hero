@@ -10,22 +10,19 @@ export const RegisterContainer = styled.main`
 `
 
 export const RegisterCard = styled.div`
-  max-width: 1400px;
+  max-width: 70rem;
   width: 100%;
-  height: 60dvh;
-  padding: 96px;
+  padding: 6rem;
   border-radius: 0.5rem;
 
   display: flex;
   align-items: center;
   justify-content: space-around;
 
-
-
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 `
 export const ContentContainer = styled.div`
-  max-width: 390px;
+  max-width: 24.375rem;
   height: 100%;
 
   display: flex;
@@ -38,41 +35,11 @@ export const ContentContainer = styled.div`
   }
 `
 
-export const BackToLoginNav = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  color: ${props => props.theme["nav-text"]};
-
-`
-
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-`
-
 export const FormContainer = styled.div`
-  max-width: 448px;
+  max-width: 28rem;
   width: 100%;
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`
-
-export const InputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  `
-
-export const InlineInput = styled.div`
-  display: grid;
-  grid-template-columns: 80% 19%;
-  gap: 0.5rem;
 `

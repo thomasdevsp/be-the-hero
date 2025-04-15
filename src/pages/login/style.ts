@@ -19,7 +19,7 @@ export const LoginContainer = styled.main`
 `
 
 export const ContentContainer = styled.div`
-  max-width: 351px;
+  max-width: 21.938rem;
   width: 100%;
 
   display: flex;
@@ -30,14 +30,14 @@ export const ContentContainer = styled.div`
 `
 export const LogoContainer = styled.div`
   img {
-    max-width: 250px;
-    height: 106px;
+    max-width: 15.625rem;
+    height: 6.625rem;
   }
 `
 
-export const LogonContainer = styled.div`
+export const FormContainer = styled.div`
   width: 100%;
-  height: 264px;
+  height: 16.5rem;
 
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@ export const SignInContainer = styled.a`
 
 export const ImageContainer = styled.div`
   img {
-    max-width: 640px;
-    max-height: 576px;
+    max-width: 40rem;
+    max-height: 36rem;
   }
 `

@@ -1,6 +1,8 @@
 import { ReactNode } from "react"
-import Logo from "../../assets/Logo.svg"
-import { BackToDashboard, ModalCard, ModalContainer, ModalContent, ModalForm, ModalMain, ModalOverlay, TextContainer } from "./style"
+import { ModalCard, ModalContainer, ModalContent, ModalForm, ModalMain, ModalOverlay } from "./style"
+import { IoArrowBackOutline } from "react-icons/io5"
+import { useAppContext } from "../../context/useAppContext"
+import { BackToNav, TextContainer } from "../../styles/themes/global"
 
 interface ModalProps {
   children: ReactNode
@@ -9,6 +11,12 @@ interface ModalProps {
 }
 
 export function Modal({ title, text, children }: ModalProps) {
+  const { toggleModal } = useAppContext()
+
+  const handleToggleModal = () => {
+    toggleModal()
+  }
+
   return (
     <ModalMain>
       <ModalOverlay />
@@ -18,23 +26,21 @@ export function Modal({ title, text, children }: ModalProps) {
         <ModalCard>
 
           <ModalContent>
-            <div>
-              <img src={Logo}  />
-            </div>
-
             <TextContainer>
               <h1>{title}</h1>
               <span>{text}</span>
             </TextContainer>
 
-            <BackToDashboard>
+            <BackToNav onClick={handleToggleModal}>
+              <IoArrowBackOutline size={24} color="red" />
+              <span>Voltar para o Dashboard</span>
+            </BackToNav>
 
-            </BackToDashboard>
+            <ModalForm>
+              {children}
+            </ModalForm>
+
           </ModalContent>
-
-          <ModalForm>
-            {children}
-          </ModalForm>
 
         </ModalCard>
 

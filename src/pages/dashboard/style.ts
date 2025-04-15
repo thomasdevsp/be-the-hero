@@ -14,9 +14,6 @@ export const CardsContainer = styled.div`
   height: calc(80dvh - 4rem);
   overflow: auto;
 
-
-
-
   @media(max-width: 1800px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
